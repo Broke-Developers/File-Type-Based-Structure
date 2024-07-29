@@ -107,7 +107,7 @@ Intended for Vue components used throughout the project.
 
 > [!IMPORTANT]  
 > It is a good practice to have `.component` extension at the end of file names, for example `text-field.component.vue` (this will defer component files from view files).
-> Components will be auto-registered and there is no need to import them. Dynamic component (or called component :is) is also available by `dynamic-component` keyword. In template we use pascal-case for using Vue components. 
+> Components will be auto-registered and there is no need to import them. Dynamic component (or called component :is) is also available by `dynamic-component` keyword. In template, we use Pascal-case for using Vue components. 
 
 ### composables
 
@@ -137,8 +137,11 @@ Intended for utility functions that perform common tasks across the project (the
 Intended for general interface definitions.
 
 ### layouts
+<img src="https://github.com/user-attachments/assets/4fa69775-3571-437b-9ae7-687e41c96b02" width="20px" height="20px"/>
+Intended for defining the overall structure of layouts in the application. 
 
-Intended for defining the overall structure of layouts in the application.
+> [!TIP]  
+> It is a good practice to have `.layout` at the end of file names and register layouts by layout key in the meta of each route (or the root roure). For this cause, you can use the layout component that is provided in this template. (if there is no layout key determined then the `default.layout.vue` will be rendered as the layout of the page)
 
 ### libs
 
@@ -178,7 +181,10 @@ Contains utility functions that can be used across the project (In contrast to h
 
 ### views
 
+<img src="https://github.com/user-attachments/assets/f6efefe5-bcf5-444a-acb6-789ab0540a52" width="20px" height="20px"/>
 Contains the main view components, which are the pages of the application.
+
+It is a good practice to have `.view` extension at the end of the file names.
 
 ## Contributing
 
