@@ -110,8 +110,20 @@ Intended for Vue components used throughout the project.
 > Components will be auto-registered and there is no need to import them. Dynamic component (or called component :is) is also available by `dynamic-component` keyword. In template, we use Pascal-case for using Vue components. 
 
 ### composables
+<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="20px" height="20px"/>
+Intended for composables used throughout the project. According to Vue itself a "composable" is a function that leverages Vue's Composition API to encapsulate and reuse stateful logic. So whenever you have these 4 pillars you have a composable: 
 
-Intended for composables used throughout the project.
+- Composition of a logic and extending vue composition API
+- reusability
+- state (reactive)
+- encapsulation 
+
+For example, consider a useToast composable. It is a composition and encapsulation of toast logic that is reused in any part of the application, and it has a reactive toast stack state (this state can be borrowed from another place but it must have a state or return a state). 
+
+If you don't have these 4 pillars, then you may not define a composable.
+
+> [!IMPORTANT]  
+> It is a good practice to have `.composable` file extension. Compostables are auto registred if you do only one thing: named export of `use${name}` and name is pascal-case, for example `export const useToast;`
 
 ### constants
 <img src="https://github.com/user-attachments/assets/e34fad94-e848-44f8-a0e2-bcb7560e7664" width="20px" height="20px"/>
@@ -155,8 +167,48 @@ Intended for including third-party libraries' decorators or custom libraries use
 Intended for mapping data from one format to another.
 
 ### plugins
+<img src="https://github.com/user-attachments/assets/859d0af7-f109-4758-a6d4-d2e644b26cb2" width="20px" height="20px"/>
+Intended for Vue plugins or other plugins used by the app. According to Vue itself, plugins are self-contained code that usually add app-level functionality to Vue. So if you have an encapsulated code but want to expose it to the entire app, then you have a plugin. Consider plugins are Vue-related concepts, so in most cases, if you don't have reactivity and logic to add to Vue app functionality then you don't want to define a plugin.
 
-Intended for Vue plugins or other plugins used by the app.
+> [!TIP]  
+> It is a common practice in Vue 3 that plugins would provide an injectable with a Symbol key and there is a corresponding composable that injects the injectable with that Symbol key. Defining a key Symbol would make access to the plugin only through the composable.
+
+> [!IMPORTANT]  
+> Plugins are auto registered by "pluginLoader" if you follow these rules:
+> - Define a folder for each plugin, like `/plugins/toast/`.
+> - Add an index.js file to the folder and export default the plugin config, like `export default { //config };`
+> - The config is like Nuxt and the hierarchy of loading is the same as well:
+> ```js
+> export default {
+>  /* name of plugins, used for dependencies or
+>   ignore, if not passed plugin-${number}
+>   will be selected as the name that number
+>   is the number for each plugin without name */
+>  name: String,
+>  /* defines that plugin should load before or
+> after the app mount default value is pre */
+>  enfore: "pre" | "post",
+>  /* name of plugins that must load before this plugin */
+>  dependOn: Array | string,
+>  // decalre that that this plugin must fully load before going to load the next one or not
+>  parallel: Boolean
+>  // works like install, the app will passed as its argument
+>  setup: Function,
+>};
+> ```
+> In main.js you can see "pluginLoader" plugin. This plugin accepts a configuration as well: 
+> ```js
+> const options = {
+>  /* Array of plugin-names to ignore
+>   a single name is acceptable by string format*/
+>  ignore: Array | String,
+>  // a function to mount the app default is app.mount("#app")
+>  mount: Function,
+>};
+> ```
+> Hierarchy: It just works like Nuxt plugin loading! First, it starts the loading by file name hierarchy, if it depends on some other plugin, it will load them first. if it is not and parallel is set to true it > starts loading this plugin and goes to load the next one, and if it is set to false, it fully loads it and then it goes to the next one!
+> 
+> You can read it in Nuxt documentation as well: [Nuxt plugin directory](https://nuxt.com/docs/guide/directory-structure/plugins)
 
 ### repositories
 
