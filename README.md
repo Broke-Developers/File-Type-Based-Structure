@@ -206,7 +206,7 @@ Intended for Vue plugins or other plugins used by the app. According to Vue itse
 >  mount: Function,
 >};
 > ```
-> Hierarchy: It just works like Nuxt plugin loading! First, it starts the loading by file name hierarchy, if it depends on some other plugin, it will load them first. if it is not and parallel is set to true it > starts loading this plugin and goes to load the next one, and if it is set to false, it fully loads it and then it goes to the next one!
+> Hierarchy: It just works like Nuxt plugin loading! First, it starts the loading by file name hierarchy, if it depends on some other plugin, it will load them first. if it is not and parallel is set to true it starts loading this plugin and goes to load the next one, and if it is set to false, it fully loads it and then it goes to the next one!
 > 
 > You can read it in Nuxt documentation as well: [Nuxt plugin directory](https://nuxt.com/docs/guide/directory-structure/plugins)
 
