@@ -84,7 +84,7 @@ Static assets (also called resources) like images, icons (SVG), fonts, and other
 
  ├── <img src="https://github.com/user-attachments/assets/58c0c76b-6911-40d7-aa03-142527a09929" width="20px" height="20px"/> fonts/  Any font that is used throughout your application. <br/>
 > [!TIP]  
-> It is good practice to have `/fonts/{fontName}/regular.woff` structure.
+> It is good practice to have `/fonts/${fontName}/regular.woff` structure.
 > 
  ├── <img src="https://github.com/user-attachments/assets/fc2799f0-fe47-414d-96ab-eab77384c2e1" width="20px" height="20px"/> images/ Any image file (exclude favicon icons) comes in here. <br/> 
  ├── <img src="https://github.com/user-attachments/assets/30e7b6dc-0aea-4609-b412-7b8691ffb2b3" width="20px" height="20px"/> style/ Contains style related files. We use SCSS and a custom design system in this template. <br/>
@@ -114,9 +114,12 @@ Intended for Vue components used throughout the project.
 Intended for composables used throughout the project.
 
 ### constants
+<img src="https://github.com/user-attachments/assets/e34fad94-e848-44f8-a0e2-bcb7560e7664" width="20px" height="20px"/>
+Intended for storing constants or configurations used across the project. 
 
-Intended for storing constants or configurations used across the project.
-
+Each domain (including shared) can have its constant folder with a facade in `/constants/${name}/index.js`. Other files should have `.constant` file extension.
+Use `object.freeze()`, follow CONSTANT_NAMING_CONVENTION and composition rule.
+ 
 ### directives 
 <img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="20px" height="20px"/>
 Intended for custom Vue directives.
@@ -160,8 +163,10 @@ Intended for Vue plugins or other plugins used by the app.
 Intended for data access logic, such as interacting with APIs or databases (these implement the interface of the external system or in other words the details of communicating with the external systems).
 
 ### router
+<img src="https://github.com/user-attachments/assets/b1b9b6af-cb11-4d27-adef-b8d7aa657871" width="20px" height="20px"/>
+Contains the routing logic for the application (including routes of each domain and middleware).
 
-Contains the routing logic for the application.
+The router instance is created with all routes configuration and global middlewares in `/router/index.js`. Middlewares should have `.middleware` file extension as well.
 
 ### schemas
 
