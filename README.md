@@ -235,8 +235,14 @@ If you have these clauses below then you have a lib:
 It is a good practice to have `.lib` extension at the end of the file name. It is also good to have a facade of all libs at `/libs/index.js`.
 
 ### mappers
+<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="20px" height="20px"/>
+Intended for mapping data from one format to another (Used in BL or UI layer).
 
-Intended for mapping data from one format to another.
+A mapper is a function, class, or object that is used to map or convert data. (usually returns an entity instance)
+
+> [!TIP]
+> It is a good practice to have `.mapper` file extension. 
+> It is better to start the mapper name with `to` keyword like toDecoded, toString!
 
 ### plugins
 <img src="https://github.com/user-attachments/assets/859d0af7-f109-4758-a6d4-d2e644b26cb2" width="20px" height="20px"/>
