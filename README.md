@@ -396,7 +396,7 @@ The router instance is created with all routes configuration and global middlewa
 
 ### schemas
 <img src="https://github.com/user-attachments/assets/29da70d3-9a77-4ffc-82ae-2bfa688e899c" width="20px" height="20px"/>
-Intended for data validation schemas. Schema is a function, object, or class that is used for validation of data between layers!
+Intended for data validation schemas. Schema is a function, object, or class that is used for validation of data between layers. <br/>
 
 <br/>
 
