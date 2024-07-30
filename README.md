@@ -91,6 +91,9 @@ If the answer is no, you shouldn't make a file for that. For example, vee-valida
 <img src="https://github.com/user-attachments/assets/126d7e9b-3e11-4486-86aa-912027d306e8" width="20px" height="20px"/>
 The main folder contains the application's main files.
 
+> [!IMPORTANT]  
+> There is no need to import from "vue", "vue-router", "pinia" and "vee-validate". All the methods and exported functionalities from these packages are auto-imported.
+
 ### assets 
 <img src="https://github.com/user-attachments/assets/4ddc495d-fb72-486f-b16d-befb26043637" width="20px" height="20px"/>
 Static assets (also called resources) like images, icons (SVG), fonts, and other media files are stored in the assets folder. If you have any static files, feel free to put them in here.
@@ -104,7 +107,7 @@ Static assets (also called resources) like images, icons (SVG), fonts, and other
  └── <img src="https://github.com/user-attachments/assets/dc9259d8-da5f-4ab0-919f-9a166e2fc4e2" width="20px" height="20px"/> svg/ SVG files (mostly icons) used in project. <br/>
  > [!TIP]  
 > It is a good practice to separate your SVGs by domains like `/shared/` or `/auth/`.
-> Also SVGs will be auto-transformed to a Vue component and accessed by `svg-loader` component.
+> Also SVGs will be auto-transformed to a Vue component and accessed by `svg-loader` component. This component is auto-registered and accepts name, transformation(boolean), height, width, color, backgroundColor, and preserveAspectRatio as props. You can also define a pattern for SVG files and even add ignore and custom a transformation function to svg-loader vite-plugin. 
 
 ### bridges
 
