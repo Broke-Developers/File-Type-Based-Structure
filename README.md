@@ -334,8 +334,20 @@ A service:
 > It is a good practice to have `.service` file extension.
 
 ### stores
-
+<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="20px" height="20px"/>
 Contains state management logic, likely using pinia or another state management library.
+
+Store Actions use services to communicate with other layers (BL). 
+
+A store can have its own related mapper.
+
+In this structure, the store is used to store both UI and BL states. If you want to pass the state from store to BL (for example passing token from authStore to Axsios-client interceptor) direct passing is forbidden. The only way is to publish an event for example `token:change`, and subscribe to that event in the client interceptor. It applies to BL to UI communication as well, if you want to send data for example logging out when the token is expired with a 401 status code, then you need to publish an event in the client interceptor and subscribe to it in the store. Note that for centralizing these pub-subs, all the subscription and publishing events between UI and BL layers, in UI that affect all domains must be in `sharedStore`.
+
+> [!IMPORTANT]  
+> As mentioned all pub-subs that affect multiple subdomains must happen in `sharedStore`. To achieve this goal we must initiate the `sharedStore`, so putting `useSharedStore()` in pinia plugin setup will initiate it and this is obligatory.
+
+> [!TIP]  
+> In this structure we use recommended vue state manager pinia. Also, it is a good practice to have `.store` at the end of actions, state, and getters files, and index.js is the place where the store is created. 
 
 ### utils
 <img src="https://github.com/user-attachments/assets/f3163c07-5aae-4444-8d84-1a056a10a818" width="20px" height="20px"/>
