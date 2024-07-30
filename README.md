@@ -327,11 +327,11 @@ A service:
 - Is a wrapper for repository, schema, and mapper.
 - Uses repository to get data, schema to validate input and output data, and mapper to map and convert data.
 
-> [!TIP]  
-> It is a good practice to have `.service` file extension.
-
 > [!IMPORTANT]  
 > A service must implement an interface.
+
+> [!TIP]  
+> It is a good practice to have `.service` file extension.
 
 ### stores
 
