@@ -114,8 +114,19 @@ Static assets (also called resources) like images, icons (SVG), fonts, and other
 Intended for files that act as intermediaries or connectors between different subdomains of the application(the anti-corruption layer)
 
 ### clients
-
+<img src="https://github.com/user-attachments/assets/fb0ac7f8-e2c6-4b2e-b3b4-158c3e88ed59" width="20px" height="20px"/>
 Intended for code that interfaces with external systems such as back-end APIs, WebAPIs like session and local storage, IndexDb, and ...
+
+On the other hand, a client is: 
+
+- a communicational interface to the persistence layer(where data is persisted such as back-end database or web storage).
+- After the client, we don't have any access to data sent to the persistence layer.
+- a singleton instance.
+- It can contain browser APIs or some library and its configuration that can work like this interface. (like Axios instance or localStorage instance)
+
+> [!TIP]
+> There is a client helper class that can easily make an HTTP client for you(Axios).
+> It is a good practice to have `.client` extension at the end of the file name. 
 
 ### components 
 <img src="https://github.com/user-attachments/assets/3c1171bf-ebc4-4c01-9112-cef698e7c093" width="20px" height="20px"/>
@@ -157,8 +168,17 @@ Intended for custom Vue directives.
 > Directive will be auto-registred if you follow two rules: 1. file name must be `v-${name}.directive.js` and the name must be in kebab-case. 2. Must name export `v${name}` and name must be pascal-case, for example, `export const vClickOutside;`.
 
 ### entities
+<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="20px" height="20px"/>
+Intended for defining data models or entities used in the application. for example, a class that is responsible for modeling a User.
 
-Intended for defining data models or entities used in the application.
+An entity is:
+- A class that represents a unique form of data.
+- Instances of this class can be mutated and each one has a lifecycle.
+- Smallest part of the data structure which is responsible for modeling BL-related data.
+- Mappers of BL usually work with an instance of an entity.
+
+> [!TIP]  
+It is a good practice to have `.entity` extension at the end of file names.
 
 ### helpers
 <img src="https://github.com/user-attachments/assets/bc103c2f-45c6-44d5-be20-abb328fdf3fc" width="20px" height="20px"/>
