@@ -153,14 +153,18 @@ The origin of helper comes from helper classes in Java. Classes that had interna
 If you have these clauses below then you have a helper:
 
 - It has low-mid complexity.
+- It is framework independent.
 - It can be related to your project logic. (not an obligation)
 - It may not be able to use it in other projects. (not an obligation)
 - It usually has some internal state. (not an obligation)
 - It is a class or an object. It usually is not a function. (and again not an obligation)
 
-If at least two clauses of above are correct, then you have a helper. A class with an internal state, a function that is dependant to your BL, and a specifically designed class only can be used in your app. All of these are helpers.
+If at least two no obligatory clauses above are correct, then you have a helper. A class with an internal state, a function that is dependent on your BL, and a specifically designed class only can be used in your app. All of these are helpers.
 
-It is a good practice to have `.helper` extension at the end of the file name. Helpers can be related only to one domain so, it is a good practice to define a folder for each domain, add an index.js file and put helpers of each domain in the corepuning folder (shared domain is also there).
+It is a good practice to have `.helper` extension at the end of the file name. Helpers can be related only to one domain so, it is a good practice to define a folder for each domain, add an index.js file, and put helpers of each domain in the corepuning folder (shared domain is also there).
+
+> [!TIP]  
+> The tricky point is that helpers are different from utils. Utils are pure and app agnostic and don't have an internal state but helpers are usually not pure and bound to the app logic and can not be used outside of the context of the app (usually). 
 
 ### interfaces
 
@@ -174,8 +178,20 @@ Intended for defining the overall structure of layouts in the application.
 > It is a good practice to have `.layout` at the end of file names and register layouts by layout key in the meta of each route (or the root roure). For this cause, you can use the layout component that is provided in this template. (if there is no layout key determined then the `default.layout.vue` will be rendered as the layout of the page)
 
 ### libs
-
+<img src="https://github.com/user-attachments/assets/d5747e81-f119-4e5f-a7a7-89712b0e3da7" width="20px" height="20px"/>
 Intended for including third-party libraries' decorators or custom libraries used in the project.
+
+If you have these clauses below then you have a lib:
+
+- It has mid-high complexity.
+- It is framework-independent.
+- It is an object or a class that contains some related responsibility (like toasting, encryption, etc.).
+- It can be used in other projects.
+- It can be team-developed lib or it can be wrapper of third-party lib.
+- It commonly can be called a tool as well.
+- It can be used in both BL and UI layers.
+
+It is a good practice to have `.lib` extension at the end of the file name. It is also good to have a facade of all libs at `/libs/index.js`.
 
 ### mappers
 
@@ -251,7 +267,7 @@ Contains state management logic, likely using pinia or another state management 
 <img src="https://github.com/user-attachments/assets/f3163c07-5aae-4444-8d84-1a056a10a818" width="20px" height="20px"/>
 Contains utility functions that can be used across the project.
 
-The origin of utils comes from Java classes with all static methods used across the program to help the developer and obey SOLID principles. for example, the Math class or just a isString function.
+The origin of utils comes from Java classes with all static methods used across the program to help the developer and obey SOLID principles. for example, the Math class or just an isString function.
 
 If you have these clauses below then you have a util:
 
@@ -262,7 +278,7 @@ If you have these clauses below then you have a util:
 - It is framework-independent and app-independent.
 
 If you don't have any of the clauses above then you may not define a util.
-It is a good practice to have `.util` extension at the end of the file name. It also good to have a facade of all utils at `/utils/index.js`.
+It is a good practice to have `.util` extension at the end of the file name. It is also good to have a facade of all utils at `/utils/index.js`.
 ### views
 
 <img src="https://github.com/user-attachments/assets/f6efefe5-bcf5-444a-acb6-789ab0540a52" width="20px" height="20px"/>
