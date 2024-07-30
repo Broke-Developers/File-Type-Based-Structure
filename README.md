@@ -309,12 +309,29 @@ Contains the routing logic for the application (including routes of each domain 
 The router instance is created with all routes configuration and global middlewares in `/router/index.js`. Middlewares should have `.middleware` file extension as well.
 
 ### schemas
+<img src="https://github.com/user-attachments/assets/29da70d3-9a77-4ffc-82ae-2bfa688e899c" width="20px" height="20px"/>
+Intended for data validation schemas. Schema is a function, object, or class that is used for validation of data between layers!
 
-Intended for data validation schemas.
+> [!TIP]  
+> It is a good practice to have `.schema` file extension.
+> In this structure we use [Yup](https://github.com/jquense/yup) to fulfill this mean.
 
 ### services
-
+<img src="https://github.com/user-attachments/assets/5d4fd89e-6b05-4f24-8009-1bc39b1c4923" width="20px" height="20px"/>
 Intended for service classes or functions that encapsulate business logic.
+
+A service:
+- Is the facade of some methods that are a communicational interface between store and repositories.
+- Uses repositories to get data from the persistence layer.
+- Chooses to work with which repository.
+- Is a wrapper for repository, schema, and mapper.
+- Uses repository to get data, schema to validate input and output data, and mapper to map and convert data.
+
+> [!TIP]  
+> It is a good practice to have `.service` file extension.
+
+> [!IMPORTANT]  
+> A service must implement an interface.
 
 ### stores
 
