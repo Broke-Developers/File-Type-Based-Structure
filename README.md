@@ -87,6 +87,12 @@ In this structure, we follow two rules:
 When you want to put a file somewhere or even make a file for something, first ask yourself can it exist without its corresponding logic, can I use it alone somewhere else?
 If the answer is no, you shouldn't make a file for that. For example, vee-validate rules don't have any meaning without the vee-validate plugin, so it is better to put it alongside its plugin. Or if a constant that is the default value of a function can not exist without that function (or component, or view, it can be anything), so just put it there and there is no need to put it in constants.
 
+<div align="center"> <img src="https://github.com/user-attachments/assets/41564ddc-a780-4f6a-a27b-9862cae378ce" alt="layers" width="50%" height="50%"/> </div>
+Layers: In the above picture, you can see the connection between layers. Learn about each one in the descriptions below. 
+
+> [!IMPORTANT]  
+> Note that this picture is about one domain. The connection between layers of one domain is like the picture, but if you want to have a connection between two parts that are not adjacent then you will use `eventBus` for this purpose. But if you want a connection between two domains you may use bridges. 
+
 ## src
 <img src="https://github.com/user-attachments/assets/126d7e9b-3e11-4486-86aa-912027d306e8" width="20px" height="20px"/>
 The main folder contains the application's main files.
@@ -110,8 +116,13 @@ Static assets (also called resources) like images, icons (SVG), fonts, and other
 > Also SVGs will be auto-transformed to a Vue component and accessed by `svg-loader` component. This component is auto-registered and accepts name, transformation(boolean), height, width, color, backgroundColor, and preserveAspectRatio as props. You can also define a pattern for SVG files and even add ignore and custom a transformation function to svg-loader vite-plugin. 
 
 ### bridges
+<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="20px" height="20px"/> 
+Intended for files that act as intermediaries or connectors between different subdomains of the application(the anti-corruption layer).
 
-Intended for files that act as intermediaries or connectors between different subdomains of the application(the anti-corruption layer)
+For example a shared logout or getting userInfo from auth or userManger domain. 
+
+> [!TIP]
+It is a good practice to have `.bridge` file extension at the end of file names.
 
 ### clients
 <img src="https://github.com/user-attachments/assets/fb0ac7f8-e2c6-4b2e-b3b4-158c3e88ed59" width="20px" height="20px"/>
@@ -347,7 +358,8 @@ In this structure, the store is used to store both UI and BL states. If you want
 > As mentioned all pub-subs that affect multiple subdomains must happen in `sharedStore`. To achieve this goal we must initiate the `sharedStore`, so putting `useSharedStore()` in pinia plugin setup will initiate it and this is obligatory.
 
 > [!TIP]  
-> In this structure we use recommended vue state manager pinia. Also, it is a good practice to have `.store` at the end of actions, state, and getters files, and index.js is the place where the store is created. 
+> In this structure we use recommended vue state manager pinia. Also, it is a good practice to have `.store` at the end of actions, state, and getters files, and index.js is the place where the store is created.
+> You can use `eventBus` lib provided in this structure.  
 
 ### utils
 <img src="https://github.com/user-attachments/assets/f3163c07-5aae-4444-8d84-1a056a10a818" width="20px" height="20px"/>
