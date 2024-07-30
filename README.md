@@ -203,8 +203,13 @@ It is a good practice to have `.helper` extension at the end of the file name. H
 > The tricky point is that helpers are different from utils. Utils are pure and app agnostic and don't have an internal state but helpers are usually not pure and bound to the app logic and can not be used outside of the context of the app (usually). 
 
 ### interfaces
+<img src="https://github.com/user-attachments/assets/98a227ff-d3a8-4d7e-99db-5455c12bc7e9" width="20px" height="20px"/>
+Intended for general interface definitions (interface or abstract class used to ensure a class has some methods).
 
-Intended for general interface definitions.
+> [!TIP]  
+> It is a good practice to have `.interface` extension at the end of file names.
+> There is an Interface util that makes making interfaces much easier.
+> Repository and Service must implement an interface (the interface of these two can be the same).
 
 ### layouts
 <img src="https://github.com/user-attachments/assets/4fa69775-3571-437b-9ae7-687e41c96b02" width="20px" height="20px"/>
