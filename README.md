@@ -107,7 +107,7 @@ Intended for Vue components used throughout the project.
 
 > [!IMPORTANT]  
 > It is a good practice to have `.component` extension at the end of file names, for example `text-field.component.vue` (this will defer component files from view files).
-> Components will be auto-registered and there is no need to import them. Dynamic component (or called component :is) is also available by `dynamic-component` keyword. In template, we use Pascal-case for using Vue components. 
+> Components will be auto-registered and there is no need to import them. Dynamic component (or called component :is) is also available by `dynamic-component` keyword. In the template, we use Pascal-case for using Vue components. 
 
 ### composables
 <img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="20px" height="20px"/>
@@ -123,7 +123,7 @@ For example, consider a useToast composable. It is a composition and encapsulati
 If you don't have these 4 pillars, then you may not define a composable.
 
 > [!IMPORTANT]  
-> It is a good practice to have `.composable` file extension. Compostables are auto registred if you do only one thing: named export of `use${name}` and name is pascal-case, for example `export const useToast;`
+> It is a good practice to have `.composable` file extension. Compostables are auto-registered if you do only one thing: named export of `use${name}` and name is pascal-case, for example, `export const useToast;`
 
 ### constants
 <img src="https://github.com/user-attachments/assets/e34fad94-e848-44f8-a0e2-bcb7560e7664" width="20px" height="20px"/>
@@ -143,9 +143,24 @@ Intended for custom Vue directives.
 ### entities
 
 Intended for defining data models or entities used in the application.
+
 ### helpers
 <img src="https://github.com/user-attachments/assets/bc103c2f-45c6-44d5-be20-abb328fdf3fc" width="20px" height="20px"/>
+Contains helpers that are used in the application. 
 
+The origin of helper comes from helper classes in Java. Classes that had internal state and sometimes bounded to the app logic. for example ArrayList, or a class that can only be used in your app and depends on the BL of your app. 
+
+If you have these clauses below then you have a helper:
+
+- It has low-mid complexity.
+- It can be related to your project logic. (not an obligation)
+- It may not be able to use it in other projects. (not an obligation)
+- It usually has some internal state. (not an obligation)
+- It is a class or an object. It usually is not a function. (and again not an obligation)
+
+If at least two clauses of above are correct, then you have a helper. A class with an internal state, a function that is dependant to your BL, and a specifically designed class only can be used in your app. All of these are helpers.
+
+It is a good practice to have `.helper` extension at the end of the file name. Helpers can be related only to one domain so, it is a good practice to define a folder for each domain, add an index.js file and put helpers of each domain in the corepuning folder (shared domain is also there).
 
 ### interfaces
 
@@ -236,7 +251,7 @@ Contains state management logic, likely using pinia or another state management 
 <img src="https://github.com/user-attachments/assets/f3163c07-5aae-4444-8d84-1a056a10a818" width="20px" height="20px"/>
 Contains utility functions that can be used across the project.
 
-The origin of utils comes from Java classes with all static methods used across the program to help the developer and obey SOLID principles. for example, the Math class.
+The origin of utils comes from Java classes with all static methods used across the program to help the developer and obey SOLID principles. for example, the Math class or just a isString function.
 
 If you have these clauses below then you have a util:
 
