@@ -1,4 +1,4 @@
-## introduction 
+# introduction 
 
 Welcome to the Vue Boilerplate Project! This project provides a comprehensive and well-structured starting point for developing Vue.js applications. It includes a robust directory structure, essential configurations, and a selection of commonly used utilities and components. Whether you are a beginner looking to learn Vue or an experienced developer seeking a solid foundation for your next project, this boilerplate is designed to save you time and help you adhere to best practices.
 
@@ -6,7 +6,7 @@ This boilerplate has been tested and used in enterprise-level applications, ensu
 
 Dive in, and let's build something amazing together!
 
-## Table of Contents
+# Table of Contents
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. <details open>
@@ -23,7 +23,7 @@ Dive in, and let's build something amazing together!
    ├── <img src="https://github.com/user-attachments/assets/848036ca-0709-4877-b8bd-1ec7578b1a51" width="20px" height="20px"/> public/ <br/> 
    <details open> 
    <summary> 
-   └── <img src="https://github.com/user-attachments/assets/126d7e9b-3e11-4486-86aa-912027d306e8" width="20px" height="20px"/> src/ 
+   └── <img src="https://github.com/user-attachments/assets/126d7e9b-3e11-4486-86aa-912027d306e8" width="20px" height="20px"/> <a href="#src">src/</a>
    </summary>
     
    &emsp;├── <img src="https://github.com/user-attachments/assets/4ddc495d-fb72-486f-b16d-befb26043637" width="20px" height="20px"/> [assets](#assets) <br/>
@@ -68,15 +68,28 @@ Dive in, and let's build something amazing together!
 
 4. [Contributing](#contributing)
 
-## Installation
+# Installation
 
 Currently, there are no installations available
 
-## Usage
+# Usage
 
 You can clone or download the repository and start from there.
 
-## Project Structure
+# Project Structure
+The structure is based on file types on the first look (or level) and separated by domain(or sub-domain) in the second level.
+
+In this structure, we follow two rules:
+
+- *File and folder naming:* we use $\color{#3c873a}{kebab-case}$ naming convention. Add the corresponding file extension at the end of the files.
+
+- $\color{#f0db4f}{Compostion}$ Rule: In software engineering composition is the relation between parent and child when a child can't exist without the parent's existence. for example relation between a body part and a human.
+When you want to put a file somewhere or even make a file for something, first ask yourself can it exist without its corresponding logic, can I use it alone somewhere else?
+If the answer is no, you shouldn't make a file for that. For example, vee-validate rules don't have any meaning without the vee-validate plugin, so it is better to put it alongside its plugin. Or if a constant that is the default value of a function can not exist without that function (or component, or view, it can be anything), so just put it there and there is no need to put it in constants.
+
+## src
+<img src="https://github.com/user-attachments/assets/126d7e9b-3e11-4486-86aa-912027d306e8" width="20px" height="20px"/>
+The main folder contains the application's main files.
 
 ### assets 
 <img src="https://github.com/user-attachments/assets/4ddc495d-fb72-486f-b16d-befb26043637" width="20px" height="20px"/>
@@ -286,6 +299,6 @@ Contains the main view components, which are the pages of the application.
 
 It is a good practice to have `.view` extension at the end of the file names.
 
-## Contributing
+# Contributing
 
 Provide instructions for contributing to the project.
