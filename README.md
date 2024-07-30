@@ -283,8 +283,18 @@ Intended for Vue plugins or other plugins used by the app. According to Vue itse
 > You can read it in Nuxt documentation as well: [Nuxt plugin directory](https://nuxt.com/docs/guide/directory-structure/plugins)
 
 ### repositories
-
+<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="20px" height="20px"/>
 Intended for data access logic, such as interacting with APIs or databases (these implement the interface of the external system or in other words the details of communicating with the external systems).
+
+A repository is:
+- A wrapper to the client and encapsulates the logic of using the client from the service.
+- Uses client to communicate with the persistence layer.
+  
+> [!IMPORTANT]
+> Each repository must implement an interface.
+
+> [!TIP]  
+> It is a good practice to have `.repository` file extension.
 
 ### router
 <img src="https://github.com/user-attachments/assets/b1b9b6af-cb11-4d27-adef-b8d7aa657871" width="20px" height="20px"/>
