@@ -138,14 +138,14 @@ Intended for custom Vue directives.
 
 > [!IMPORTANT]  
 > It is a good practice to have `.directive` at the end of file names, for example, `v-click-outside.directive.js`.
-> Directive will be auto-registred if you follow two rules: 1. file name must be `v-${name}.directive.js` and the name must be in kebab-case. 2. Must name export `v${name}` and name must be pascal-case, for example `export const vClickOutside;`.
+> Directive will be auto-registred if you follow two rules: 1. file name must be `v-${name}.directive.js` and the name must be in kebab-case. 2. Must name export `v${name}` and name must be pascal-case, for example, `export const vClickOutside;`.
 
 ### entities
 
 Intended for defining data models or entities used in the application.
 ### helpers
+<img src="https://github.com/user-attachments/assets/bc103c2f-45c6-44d5-be20-abb328fdf3fc" width="20px" height="20px"/>
 
-Intended for utility functions that perform common tasks across the project (the tricky point is that helpers are different from utils. utils are pure and app agnostic and don't have an internal state but helpers are usually not pure and bound to the app logic and can not be used outside of the context of the app.).
 
 ### interfaces
 
@@ -174,7 +174,7 @@ Intended for Vue plugins or other plugins used by the app. According to Vue itse
 > It is a common practice in Vue 3 that plugins would provide an injectable with a Symbol key and there is a corresponding composable that injects the injectable with that Symbol key. Defining a key Symbol would make access to the plugin only through the composable.
 
 > [!IMPORTANT]  
-> Plugins are auto registered by "pluginLoader" if you follow these rules:
+> Plugins are auto-registered by "pluginLoader" if you follow these rules:
 > - Define a folder for each plugin, like `/plugins/toast/`.
 > - Add an index.js file to the folder and export default the plugin config, like `export default { //config };`
 > - The config is like Nuxt and the hierarchy of loading is the same as well:
@@ -182,17 +182,17 @@ Intended for Vue plugins or other plugins used by the app. According to Vue itse
 > export default {
 >  /* name of plugins, used for dependencies or
 >   ignore, if not passed plugin-${number}
->   will be selected as the name that number
->   is the number for each plugin without name */
+>   will be selected as the name. That number
+>   is the number for each plugin without a name */
 >  name: String,
->  /* defines that plugin should load before or
-> after the app mount default value is pre */
->  enfore: "pre" | "post",
+>  /* defines that the plugin should load before or
+> After the app mount default value is pre */
+>  enforce: "pre" | "post",
 >  /* name of plugins that must load before this plugin */
 >  dependOn: Array | string,
->  // decalre that that this plugin must fully load before going to load the next one or not
+>  // declare that this plugin must fully load before going to load the next one or not
 >  parallel: Boolean
->  // works like install, the app will passed as its argument
+>  // works like install, the app will be passed as its argument
 >  setup: Function,
 >};
 > ```
@@ -200,7 +200,7 @@ Intended for Vue plugins or other plugins used by the app. According to Vue itse
 > ```js
 > const options = {
 >  /* Array of plugin-names to ignore
->   a single name is acceptable by string format*/
+>   A single name is acceptable by string format*/
 >  ignore: Array | String,
 >  // a function to mount the app default is app.mount("#app")
 >  mount: Function,
@@ -233,9 +233,21 @@ Intended for service classes or functions that encapsulate business logic.
 Contains state management logic, likely using pinia or another state management library.
 
 ### utils
+<img src="https://github.com/user-attachments/assets/f3163c07-5aae-4444-8d84-1a056a10a818" width="20px" height="20px"/>
+Contains utility functions that can be used across the project.
 
-Contains utility functions that can be used across the project (In contrast to helpers, these are pure and app agnostic).
+The origin of utils comes from Java classes with all static methods used across the program to help the developer and obey SOLID principles. for example, the Math class.
 
+If you have these clauses below then you have a util:
+
+- It is a class with all static methods or some functions.
+- It has low complexity and does a more abstract job.
+- It does not have any internal state, so it's a pure function.
+- It is usable in other projects.
+- It is framework-independent and app-independent.
+
+If you don't have any of the clauses above then you may not define a util.
+It is a good practice to have `.util` extension at the end of the file name. It also good to have a facade of all utils at `/utils/index.js`.
 ### views
 
 <img src="https://github.com/user-attachments/assets/f6efefe5-bcf5-444a-acb6-789ab0540a52" width="20px" height="20px"/>
