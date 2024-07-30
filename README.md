@@ -79,7 +79,7 @@ You can clone or download the repository and start from there.
 # Project Structure
 The structure is based on file types on the first look (or level) and separated by domain(or sub-domain) in the second level.
 
-In this structure, we follow two rules:
+In this structure, we follow three rules:
 
 - *File and folder naming:* we use $\color{#3c873a}{kebab-case}$ naming convention. Add the corresponding file extension at the end of the files.
 
@@ -88,7 +88,8 @@ When you want to put a file somewhere or even make a file for something, first a
 If the answer is no, you shouldn't make a file for that. For example, vee-validate rules don't have any meaning without the vee-validate plugin, so it is better to put it alongside its plugin. Or if a constant that is the default value of a function can not exist without that function (or component, or view, it can be anything), so just put it there and there is no need to put it in constants.
 
 <div align="center"> <img src="https://github.com/user-attachments/assets/41564ddc-a780-4f6a-a27b-9862cae378ce" alt="layers" width="50%" height="50%"/> </div>
-Layers: In the above picture, you can see the connection between layers. Learn about each one in the descriptions below. 
+
+- Layers: In the above picture, you can see the connection between layers. Learn about each one in the descriptions below. 
 
 > [!IMPORTANT]  
 > Note that this picture is about one domain. The connection between layers of one domain is like the picture, but if you want to have a connection between two parts that are not adjacent then you will use `eventBus` for this purpose. But if you want a connection between two domains you may use bridges. 
