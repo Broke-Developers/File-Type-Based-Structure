@@ -15,11 +15,11 @@ Dive in, and let's build something amazing together!
    </summary>
  
    ├── <img src="https://github.com/user-attachments/assets/c8216515-52bd-4460-9aa6-741fea290799" width="20px" height="20px"/> .gitlab/ <br/>
-   ├── <img src="https://github.com/user-attachments/assets/af6489c2-2840-4dbc-ac20-728e3fb4eca5" width="20px" height="20px"/> .husky/ <br/>
+   ├── <img src="https://github.com/user-attachments/assets/af6489c2-2840-4dbc-ac20-728e3fb4eca5" width="20px" height="20px"/> [.husky](#husky) / <br/>
    ├── <img src="https://github.com/user-attachments/assets/b0c5646c-98bd-4bfa-80f4-853bc299b6e0" width="20px" height="20px"/> .vscode/ <br/>
-   ├── <img src="https://github.com/user-attachments/assets/6818b5c9-bf0b-4a9c-a517-cea266b5b652" width="20px" height="20px"/> env/ <br/>
+   ├── <img src="https://github.com/user-attachments/assets/6818b5c9-bf0b-4a9c-a517-cea266b5b652" width="20px" height="20px"/> [env](#env) / <br/>
    ├── <img src="https://github.com/user-attachments/assets/baa20c8a-ffc3-4954-bb66-2dba1e51b5a6" width="20px" height="20px"/> node_modules/ <br/>
-   ├── <img src="https://github.com/user-attachments/assets/aefcf5a4-0869-45b8-bfc7-61b749344d24" width="20px" height="20px"/> packages/ <br/>
+   ├── <img src="https://github.com/user-attachments/assets/aefcf5a4-0869-45b8-bfc7-61b749344d24" width="20px" height="20px"/> [packages/](#packages) <br/>
    ├── <img src="https://github.com/user-attachments/assets/848036ca-0709-4877-b8bd-1ec7578b1a51" width="20px" height="20px"/> public/ <br/> 
    <details open> 
    <summary> 
@@ -54,7 +54,7 @@ Dive in, and let's build something amazing together!
    ├── <img src="https://github.com/user-attachments/assets/974d096c-292f-419a-bc79-c3bd2f5c465c" width="20px" height="20px"/> .eslintrc-auto-import.json <br/>
    ├── <img src="https://github.com/user-attachments/assets/c3aad385-41df-46ee-9d3f-e9a4d9855b5a" width="20px" height="20px"/> .gitignore <br/> 
    ├── <img src="https://github.com/user-attachments/assets/fbdb0684-c8f7-4904-9f4b-bfa708b6796b" width="20px" height="20px"/> .prettierrc.json <br/>
-   ├── <img src="https://github.com/user-attachments/assets/d9462012-bb2b-47be-93d3-ac38287eb0e5" width="20px" height="20px"/> commitlint.config.js <br/>
+   ├── <img src="https://github.com/user-attachments/assets/d9462012-bb2b-47be-93d3-ac38287eb0e5" width="20px" height="20px"/> [commitlint.config.js](#commitlint) <br/>
    ├── <img src="https://github.com/user-attachments/assets/c76a4932-9a46-46fd-9969-9ab23f7fe1bb" width="20px" height="20px"/> components.d.ts <br/>
    ├── <img src="https://github.com/user-attachments/assets/4161c0ff-f9f6-4e15-a093-c6f06ed9ee9e" width="20px" height="20px"/> eslint.config.mjs <br/>
    ├── <img src="https://github.com/user-attachments/assets/f5680e4c-5825-42b8-af78-27c66679a107" width="20px" height="20px"/> index.html <br/>
@@ -98,11 +98,50 @@ If the answer is no, you shouldn't make a file for that. For example, vee-valida
 
 <br/>
 
+## husky
+<img src="https://github.com/user-attachments/assets/af6489c2-2840-4dbc-ac20-728e3fb4eca5" width="20px" height="20px"/>
+Husky enhances your commits and more 🐶 woof! (description of husky docs).
+
+We use Husky to lint our commit messages and run a prettier pre-commit hook to make sure all files are prettified. 
+
+We use conventional commit configuration to make sure all developers obey its rules. 
+
+You can read more about it [here](https://github.com/conventional-changelog/commitlint).
+
+## env
+<img src="https://github.com/user-attachments/assets/6818b5c9-bf0b-4a9c-a517-cea266b5b652" width="20px" height="20px"/>
+Contains environmental variables used in the application.
+
+├── <img src="https://github.com/user-attachments/assets/9342df21-dcbc-4e93-bc7f-809d0d868bbf" width="20px" height="20px"/> .env.dev <br/>
+├── <img src="https://github.com/user-attachments/assets/9342df21-dcbc-4e93-bc7f-809d0d868bbf" width="20px" height="20px"/> .env-prod <br/>
+└── <img src="https://github.com/user-attachments/assets/9342df21-dcbc-4e93-bc7f-809d0d868bbf" width="20px" height="20px"/> .end.test <br/>
+
+<br/>
+
+> [!TIP]  
+> In this structure we use Vite so envs must start with `VITE_`.
+> 
+> To use envs in build time there are three different commands: `yarn run build:dev`.
+> 
+> Also available for dev: `yarn run dev:prod`.
+
+## packages
+<img src="https://github.com/user-attachments/assets/aefcf5a4-0869-45b8-bfc7-61b749344d24" width="20px" height="20px"/>
+Contains potentially npm packages.
+
+If you want to develop a package that can be used across applications or you have several projects using the same tools, components, etc (with monorepo) then you may define a package.
+
+Each package has its own `package.json` and it must have an `index.js`. The folder structure of packages obeys the src folder structure as well.
+
+<br/>
+
+> [!IMPORTANT]  
+> We use yarn to handle workspaces and packages dependancies.
+> Always run `yarn link` at the initialization of the project.
+
 ## src
 <img src="https://github.com/user-attachments/assets/126d7e9b-3e11-4486-86aa-912027d306e8" width="20px" height="20px"/>
 The main folder contains the application's main files. <br/>
-
-<br/>
 
 > [!IMPORTANT]  
 > There is no need to import from "vue", "vue-router", "pinia" and "vee-validate". All the methods and exported functionalities from these packages are auto-imported.
@@ -477,6 +516,10 @@ It is a good practice to have `.util` extension at the end of the file name. It 
 Contains the main view components, which are the pages of the application.
 
 It is a good practice to have `.view` extension at the end of the file names.
+
+## commitlint
+<img src="https://github.com/user-attachments/assets/6818b5c9-bf0b-4a9c-a517-cea266b5b652" width="20px" height="20px"/>
+Combined with husky to make sure that developers obey conventional commit messages.
 
 # Contributing
 
