@@ -113,7 +113,7 @@ You can read more about it [here](https://github.com/conventional-changelog/comm
 Contains environmental variables used in the application.
 
 ├── <img src="https://github.com/user-attachments/assets/9342df21-dcbc-4e93-bc7f-809d0d868bbf" width="20px" height="20px"/> .env.dev <br/>
-├── <img src="https://github.com/user-attachments/assets/9342df21-dcbc-4e93-bc7f-809d0d868bbf" width="20px" height="20px"/> .env-prod <br/>
+├── <img src="https://github.com/user-attachments/assets/9342df21-dcbc-4e93-bc7f-809d0d868bbf" width="20px" height="20px"/> .env.prod <br/>
 └── <img src="https://github.com/user-attachments/assets/9342df21-dcbc-4e93-bc7f-809d0d868bbf" width="20px" height="20px"/> .end.test <br/>
 
 <br/>
