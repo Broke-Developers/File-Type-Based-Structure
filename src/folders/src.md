@@ -16,6 +16,7 @@ Static assets (also called resources) like images, icons (SVG), fonts, and other
 
 <script setup>
     import Folders from "../components/Folders.vue";
+
     const items = [
         {
             "img": "https://github.com/user-attachments/assets/58c0c76b-6911-40d7-aa03-142527a09929",

@@ -6,6 +6,7 @@ Contains environmental variables used in the application.
 
 <script setup>
     import Folders from "../components/Folders.vue";
+
     const items = [
         {
             "img": "https://github.com/user-attachments/assets/9342df21-dcbc-4e93-bc7f-809d0d868bbf",
