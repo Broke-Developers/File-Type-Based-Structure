@@ -12,7 +12,7 @@
         {
             "img": "https://github.com/user-attachments/assets/af6489c2-2840-4dbc-ac20-728e3fb4eca5",
             "title": ".husky/",
-            "link": "husky.html"
+            "link": "husky"
         },
         {
             "img": "https://github.com/user-attachments/assets/b0c5646c-98bd-4bfa-80f4-853bc299b6e0",
@@ -22,7 +22,7 @@
         {
             "img": "https://github.com/user-attachments/assets/6818b5c9-bf0b-4a9c-a517-cea266b5b652",
             "title": "env/",
-            "link": "env.html"
+            "link": "env"
         },
         {
             "img": "https://github.com/user-attachments/assets/baa20c8a-ffc3-4954-bb66-2dba1e51b5a6",
@@ -32,7 +32,7 @@
         {
             "img": "https://github.com/user-attachments/assets/aefcf5a4-0869-45b8-bfc7-61b749344d24",
             "title": "packages/",
-            "link": "packages.html"
+            "link": "packages"
         },
         {
             "img": "https://github.com/user-attachments/assets/848036ca-0709-4877-b8bd-1ec7578b1a51",
@@ -42,7 +42,7 @@
         {
             "img": "https://github.com/user-attachments/assets/126d7e9b-3e11-4486-86aa-912027d306e8",
             "title": "src/",
-            "link": "src.html",
+            "link": "src",
             folders: [
                 {
                     "img": "https://github.com/user-attachments/assets/4ddc495d-fb72-486f-b16d-befb26043637",
@@ -193,7 +193,7 @@
         },
         {
             "img": "https://github.com/user-attachments/assets/f5680e4c-5825-42b8-af78-27c66679a107",
-            "title": "index.html",
+            "title": "index",
             "link": null
         },
         {

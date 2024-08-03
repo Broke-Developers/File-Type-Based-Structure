@@ -52,12 +52,13 @@ export default defineConfig({
   srcDir: "src",
   lang: "en-US",
 
+  base: "/File-Type-Based-Structure/",
+
   title: "File-type-Based-Structure",
   description:
     "This project provides a comprehensive and well-structured starting point for developing Vue.js applications",
 
   themeConfig: {
-    nav: [{ text: "", link: "" }],
     sidebar: {
       "/folders": SIDE_BAR_CONFIG,
       "/introduction": SIDE_BAR_CONFIG,

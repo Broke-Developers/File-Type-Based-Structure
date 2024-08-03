@@ -10,7 +10,7 @@
       A comprehensive and well-structured starting point for developing Vue.js applications.
     </p>
     <p class="actions">
-      <a class="get-started" href="/introduction.html">
+      <a class="get-started" href="introduction">
         Get Started
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
           <path
@@ -19,7 +19,7 @@
         </svg>
       </a>
 
-      <a class="setup" href="/installation.html">Install</a>
+      <a class="setup" href="installation">Install</a>
     </p>
   </section>
 
