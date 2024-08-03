@@ -49,9 +49,13 @@ const SIDE_BAR_CONFIG = [
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   extends: baseConfig,
+  srcDir: "src",
+  lang: "en-US",
+
   title: "File-type-Based-Structure",
   description:
     "This project provides a comprehensive and well-structured starting point for developing Vue.js applications",
+
   themeConfig: {
     nav: [{ text: "", link: "" }],
     sidebar: {
