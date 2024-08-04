@@ -40,7 +40,10 @@
       },
     },
     indent: Boolean,
-    parentLink: String,
+    parentLink: {
+      type: String,
+      default: "",
+    },
   });
 </script>
 
