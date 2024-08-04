@@ -179,7 +179,7 @@
         {
             "img": "https://github.com/user-attachments/assets/d9462012-bb2b-47be-93d3-ac38287eb0e5",
             "title": "commitlint.config.js",
-            "link": "#commitlint"
+            "link": "commitlint"
         },
         {
             "img": "https://github.com/user-attachments/assets/c76a4932-9a46-46fd-9969-9ab23f7fe1bb",
