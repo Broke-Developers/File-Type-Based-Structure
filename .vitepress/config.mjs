@@ -52,9 +52,9 @@ export default defineConfig({
   srcDir: "src",
   lang: "en-US",
 
-  base: "/File-type-Based-Structure/",
+  base: "/File-Type-Based-Structure/",
 
-  title: "File-type-Based-Structure",
+  title: "File-Type-Based-Structure",
   description:
     "This project provides a comprehensive and well-structured starting point for developing Vue.js applications",
 
