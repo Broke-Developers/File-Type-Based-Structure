@@ -22,6 +22,82 @@
   --scroll-color: var(--vt-c-bg);
 }
 
+/* FIXME:Update the color palette */
+
+/* :root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f9f9f9;
+  --vt-c-white-mute: #f1f1f1;
+
+  --vt-c-black: #1a1a1a;
+  --vt-c-black-pure: #000000;
+  --vt-c-black-soft: #242424;
+  --vt-c-black-mute: #2f2f2f;
+
+  --vt-c-indigo: #213547;
+  --vt-c-indigo-soft: #476582;
+  --vt-c-indigo-light: #aac8e4;
+
+  --vt-c-gray: #8e8e8e;
+  --vt-c-gray-light-1: #aeaeae;
+  --vt-c-gray-light-2: #c7c7c7;
+  --vt-c-gray-light-3: #d1d1d1;
+  --vt-c-gray-light-4: #e5e5e5;
+  --vt-c-gray-light-5: #f2f2f2;
+  --vt-c-gray-dark-1: #636363;
+  --vt-c-gray-dark-2: #484848;
+  --vt-c-gray-dark-3: #3a3a3a;
+  --vt-c-gray-dark-4: #282828;
+  --vt-c-gray-dark-5: #202020;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.7);
+  --vt-c-text-light-3: rgba(60, 60, 60, 0.33);
+  --vt-c-text-light-4: rgba(60, 60, 60, 0.18);
+  --vt-c-text-light-code: var(--vt-c-indigo-soft);
+
+  --vt-c-text-dark-1: rgba(255, 255, 255, 0.87);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.6);
+  --vt-c-text-dark-3: rgba(235, 235, 235, 0.38);
+  --vt-c-text-dark-4: rgba(235, 235, 235, 0.18);
+  --vt-c-text-dark-code: var(--vt-c-indigo-light);
+
+  --vt-c-green: #167d7f;
+  --vt-c-green-light: #1f9e9f;
+  --vt-c-green-lighter: #23b2b3;
+  --vt-c-green-dark: #136a6b;
+  --vt-c-green-darker: #0e4848;
+
+  --vt-c-blue: #00aab2;
+  --vt-c-blue-light: #33bbc2;
+  --vt-c-blue-lighter: #66ccd2;
+  --vt-c-blue-dark: #00898d;
+  --vt-c-blue-darker: #00676a;
+
+  --vt-c-yellow: #f9f871;
+  --vt-c-yellow-light: #fafb94;
+  --vt-c-yellow-lighter: #fcfdb7;
+  --vt-c-yellow-dark: #d2d260;
+  --vt-c-yellow-darker: #a7a749;
+
+  --vt-c-red: #ed3c50;
+  --vt-c-red-light: #f43771;
+  --vt-c-red-lighter: #fd1d7c;
+  --vt-c-red-dark: #cd2d3f;
+  --vt-c-red-darker: #ab2131;
+
+  --vt-c-purple: #de41e0;
+  --vt-c-purple-light: #e936eb;
+  --vt-c-purple-lighter: #f616f8;
+  --vt-c-purple-dark: #823c83;
+  --vt-c-purple-darker: #602960;
+} */
+
 body {
   overflow-y: scroll;
   animation: scrollbar-fade-out 0.6s ease-in-out forwards;
@@ -44,4 +120,8 @@ body::-webkit-scrollbar-track {
 
 body:hover {
   animation: scrollbar-fade-in 0.6s ease-in-out forwards;
+}
+
+.vt-doc .header-anchor:before {
+  content: "";
 }

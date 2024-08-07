@@ -5,224 +5,219 @@
 
     const items = [
         {
-            "img": "https://github.com/user-attachments/assets/c8216515-52bd-4460-9aa6-741fea290799",
+            "img": "../assets/icons/Gitlab.svg",
             "title": ".gitlab/",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/af6489c2-2840-4dbc-ac20-728e3fb4eca5",
+            "img": "../assets/icons/Husky.svg",
             "title": ".husky/",
             "link": "husky"
         },
         {
-            "img": "https://github.com/user-attachments/assets/b0c5646c-98bd-4bfa-80f4-853bc299b6e0",
+            "img": "../assets/icons/Vscode.svg",
             "title": ".vscode/",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/6818b5c9-bf0b-4a9c-a517-cea266b5b652",
+            "img": "../assets/icons/Envs.svg",
             "title": "env/",
             "link": "env"
         },
         {
-            "img": "https://github.com/user-attachments/assets/baa20c8a-ffc3-4954-bb66-2dba1e51b5a6",
+            "img": "../assets/icons/Nodejs.svg",
             "title": "node_modules/",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/aefcf5a4-0869-45b8-bfc7-61b749344d24",
+            "img": "../assets/icons/Packages.svg",
             "title": "packages/",
             "link": "packages"
         },
         {
-            "img": "https://github.com/user-attachments/assets/848036ca-0709-4877-b8bd-1ec7578b1a51",
+            "img": "../assets/icons/Public.svg",
             "title": "public/",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/126d7e9b-3e11-4486-86aa-912027d306e8",
+            "img": "../assets/icons/Src.svg",
             "title": "src/",
             "link": "src",
             folders: [
                 {
-                    "img": "https://github.com/user-attachments/assets/4ddc495d-fb72-486f-b16d-befb26043637",
+                    "img": "../assets/icons/Assets.svg",
                     "title": "assets",
                     "link": "#assets"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863",
+                    "img": "../assets/icons/bridges.svg",
                     "title": "bridges",
                     "link": "#bridges"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/fb0ac7f8-e2c6-4b2e-b3b4-158c3e88ed59",
+                    "img": "../assets/icons/clients.svg",
                     "title": "clients",
                     "link": "#clients"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/3c1171bf-ebc4-4c01-9112-cef698e7c093",
+                    "img": "../assets/icons/components.svg",
                     "title": "components",
                     "link": "#components"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863",
+                    "img": "../assets/icons/composables.svg",
                     "title": "composables",
                     "link": "#composables"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/e34fad94-e848-44f8-a0e2-bcb7560e7664",
+                    "img": "../assets/icons/constants.svg",
                     "title": "constants",
                     "link": "#constants"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863",
+                    "img": "../assets/icons/directives.svg",
                     "title": "directives",
                     "link": "#directives"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863",
+                    "img": "../assets/icons/entities.svg",
                     "title": "entities",
                     "link": "#entities"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/bc103c2f-45c6-44d5-be20-abb328fdf3fc",
+                    "img": "../assets/icons/helpers.svg",
                     "title": "helpers",
                     "link": "#helpers"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/98a227ff-d3a8-4d7e-99db-5455c12bc7e9",
+                    "img": "../assets/icons/interfaces.svg",
                     "title": "interfaces",
                     "link": "#interfaces"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/4fa69775-3571-437b-9ae7-687e41c96b02",
+                    "img": "../assets/icons/layouts.svg",
                     "title": "layouts",
                     "link": "#layouts"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/d5747e81-f119-4e5f-a7a7-89712b0e3da7",
+                    "img": "../assets/icons/libs.svg",
                     "title": "libs",
                     "link": "#libs"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863",
+                    "img": "../assets/icons/mappers.svg",
                     "title": "mappers",
                     "link": "#mappers"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/859d0af7-f109-4758-a6d4-d2e644b26cb2",
+                    "img": "../assets/icons/plugins.svg",
                     "title": "plugins",
                     "link": "#plugins"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863",
+                    "img": "../assets/icons/repositories.svg",
                     "title": "repositories",
                     "link": "#repositories"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/b1b9b6af-cb11-4d27-adef-b8d7aa657871",
+                    "img": "../assets/icons/router.svg",
                     "title": "router",
                     "link": "#router"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/29da70d3-9a77-4ffc-82ae-2bfa688e899c",
+                    "img": "../assets/icons/schemas.svg",
                     "title": "schemas",
                     "link": "#schemas"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/5d4fd89e-6b05-4f24-8009-1bc39b1c4923",
+                    "img": "../assets/icons/services.svg",
                     "title": "services",
                     "link": "#services"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863",
+                    "img": "../assets/icons/stores.svg",
                     "title": "stores",
                     "link": "#stores"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/f3163c07-5aae-4444-8d84-1a056a10a818",
+                    "img": "../assets/icons/utils.svg",
                     "title": "utils",
                     "link": "#utils"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/f6efefe5-bcf5-444a-acb6-789ab0540a52",
+                    "img": "../assets/icons/views.svg",
                     "title": "views",
                     "link": "#views"
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/d9012bbe-7a34-4f5d-b3ed-419d7a33c6e7",
+                    "img": "../assets/icons/App.svg",
                     "title": "App.vue",
                     "link": null
                 },
                 {
-                    "img": "https://github.com/user-attachments/assets/79005a9f-8fc4-45b5-9399-2dff45659b81",
+                    "img" : "../assets/icons/main.svg",
                     "title": "main.js",
                     "link": null
                 },
             ]
         },
         {
-            "img": "https://github.com/user-attachments/assets/974d096c-292f-419a-bc79-c3bd2f5c465c",
+            "img": "../assets/icons/Json.svg",
             "title": ".eslintrc-auto-import.json",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/c3aad385-41df-46ee-9d3f-e9a4d9855b5a",
+            "img": "../assets/icons/Git.svg",
             "title": ".gitignore",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/fbdb0684-c8f7-4904-9f4b-bfa708b6796b",
+            "img": "../assets/icons/Prettier.svg",
             "title": ".prettierrc.json",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/d9462012-bb2b-47be-93d3-ac38287eb0e5",
+            "img": "../assets/Icons/Commitlint.svg",
             "title": "commitlint.config.js",
             "link": "commitlint"
         },
         {
-            "img": "https://github.com/user-attachments/assets/c76a4932-9a46-46fd-9969-9ab23f7fe1bb",
+            "img": "../assets/Icons/Typescript.svg",
             "title": "components.d.ts",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/4161c0ff-f9f6-4e15-a093-c6f06ed9ee9e",
+            "img": "../assets/icons/Eslint.svg",
             "title": "eslint.config.mjs",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/f5680e4c-5825-42b8-af78-27c66679a107",
-            "title": "index",
-            "link": null
-        },
-        {
-            "img": "https://github.com/user-attachments/assets/4bb53694-27a4-4e67-bacc-d82271de4d6d",
+            "img": "../assets/icons/Json.svg",
             "title": "jsconfig.json",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/4728e1e1-f7b9-436e-8da8-144b9ccc6b74",
+            "img": "../assets/icons/Nodejs.svg",
             "title": "package.json",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/e476921a-4838-43d7-99f4-721bb187d672",
+            "img": "../assets/icons/Markdown.svg",
             "title": "README.md",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/b1690ee9-5946-4e2f-b037-69f4aad05363",
+            "img": "../assets/icons/Vite.svg",
             "title": "vite.config.js",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/01d42464-740a-42f6-ab89-5e5134fbf8b6",
+            "img": "../assets/icons/Vitest.svg",
             "title": "vitest.config.js",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/61713452-cfb1-4e01-bf1f-fc01fc16d9a0",
+            "img": "../assets/icons/Yarn.svg",
             "title": "yarn.lock",
             "link": null
         }

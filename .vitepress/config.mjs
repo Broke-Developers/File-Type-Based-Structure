@@ -6,40 +6,40 @@ const SIDE_BAR_CONFIG = [
     text: "Getting Started",
     items: [
       {
-        text: "introduction",
+        text: "Introduction",
         link: "/introduction",
       },
       {
-        text: "installation",
+        text: "Installation",
         link: "/installation",
       },
     ],
   },
   {
-    text: "directories",
+    text: "Directories",
     items: [
       {
-        text: "root",
+        text: "Root",
         link: "folders/index",
       },
       {
-        text: "husky",
+        text: "Husky",
         link: "folders/husky",
       },
       {
-        text: "env",
+        text: "Env",
         link: "folders/env",
       },
       {
-        text: "packages",
+        text: "Packages",
         link: "folders/packages",
       },
       {
-        text: "src",
+        text: "Src",
         link: "/folders/src",
       },
       {
-        text: "commitlint",
+        text: "Commitlint",
         link: "folders/commitlint",
       },
     ],
@@ -52,7 +52,7 @@ export default defineConfig({
   srcDir: "src",
   lang: "en-US",
 
-  base: "/File-Type-Based-Structure/",
+  base: "/",
 
   title: "File-type-Based-Structure",
   description:
@@ -74,4 +74,3 @@ export default defineConfig({
     },
   },
 });
-

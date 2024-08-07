@@ -1,6 +1,5 @@
 <template>
   <section id="hero">
-    <img id="uwu" alt="Vue.js Kawaii Logo by @icarusgkx" />
     <h1 class="tagline">
       The
       <span class="accent">File-Type-Based</span>
@@ -22,7 +21,6 @@
       <a class="setup" href="installation">Install</a>
     </p>
   </section>
-
   <section id="highlights" class="vt-box-container">
     <div class="vt-box">
       <h2>Comprehensive</h2>
@@ -55,7 +53,7 @@
   #hero {
     padding: 96px 32px;
     text-align: center;
-    height: 75dvh;
+    height: 54dvh;
   }
 
   .tagline {

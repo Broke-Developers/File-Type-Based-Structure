@@ -1,7 +1,5 @@
 
-<img src="https://github.com/user-attachments/assets/aefcf5a4-0869-45b8-bfc7-61b749344d24" width="48px" height="48px"/>
-
-# packages
+# <a id="Packages" href="#Packages" style="text-decoration:none;"><h1 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1.6rem"><img src="./../assets/icons/Packages.svg" width="32px" height="32px"/>Packages</h1></a>
 
 Contains potentially npm packages.
 

@@ -1,6 +1,4 @@
-<img src="https://github.com/user-attachments/assets/6818b5c9-bf0b-4a9c-a517-cea266b5b652" width="48px" height="48px"/>
-
-# env
+# <a id="Env" href="#Env" style="text-decoration:none;"><h1 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1.6rem"><img src="../assets/icons/Envs.svg" width="32px" height="32px"/>Env</h1></a>
 
 Contains environmental variables used in the application.
 
@@ -9,17 +7,17 @@ Contains environmental variables used in the application.
 
     const items = [
         {
-            "img": "https://github.com/user-attachments/assets/9342df21-dcbc-4e93-bc7f-809d0d868bbf",
+            "img": "../assets/icons/Envs.svg",
             "title": ".env.dev",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/9342df21-dcbc-4e93-bc7f-809d0d868bbf",
+            "img": "../assets/icons/Envs.svg",
             "title": ".env.prod",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/9342df21-dcbc-4e93-bc7f-809d0d868bbf",
+            "img": "../assets/icons/Envs.svg",
             "title": ".end.test",
             "link": null
         }

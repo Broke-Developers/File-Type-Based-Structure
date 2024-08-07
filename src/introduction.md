@@ -1,7 +1,7 @@
 # Getting Started
 
 
-## introduction
+## Introduction
 Welcome to the Vue Boilerplate Project! This project provides a comprehensive and well-structured starting point for developing Vue.js applications. It includes a robust directory structure, essential configurations, and a selection of commonly used utilities and components. Whether you are a beginner looking to learn Vue or an experienced developer seeking a solid foundation for your next project, this boilerplate is designed to save you time and help you adhere to best practices.
 
 This boilerplate has been tested and used in enterprise-level applications, ensuring its reliability and effectiveness. It includes a range of features to help you get started quickly, including state management, routing, and a clean organization of files and directories.
@@ -19,7 +19,7 @@ In this structure, we follow three rules:
 When you want to put a file somewhere or even make a file for something, first ask yourself can it exist without its corresponding logic, can I use it alone somewhere else?
 If the answer is no, you shouldn't make a file for that. For example, vee-validate rules don't have any meaning without the vee-validate plugin, so it is better to put it alongside its plugin. Or if a constant that is the default value of a function can not exist without that function (or component, or view, it can be anything), so just put it there and there is no need to put it in constants.
 
-<div align="center"> <img src="https://github.com/user-attachments/assets/41564ddc-a780-4f6a-a27b-9862cae378ce" alt="layers" width="75%" height="75%"/> </div>
+<div align="center"> <img src="./assets/Images/Architecture.png" alt="layers" width="75%" height="75%"/> </div>
 
 <br/>
 

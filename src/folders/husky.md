@@ -1,6 +1,5 @@
-<img src="https://github.com/user-attachments/assets/af6489c2-2840-4dbc-ac20-728e3fb4eca5" width="48px" height="48px"/> 
+# <a id="Husky" href="#Husky" style="text-decoration:none;"><h1 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1.6rem"><img src="../assets/icons/Husky.svg" width="32px" height="32px"/>Husky</h1></a>
 
-# husky
 
 Husky enhances your commits and more 🐶 woof! (description of husky docs).
 

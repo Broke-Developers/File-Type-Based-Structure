@@ -1,4 +1,8 @@
 import { VPTheme } from "@vue/theme";
+import MyLayout from "./Layout.vue";
 import "./style.css";
 
-export default Object.assign({}, VPTheme);
+export default {
+  extends: VPTheme,
+  Layout: MyLayout,
+};

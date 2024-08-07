@@ -1,17 +1,14 @@
-<img src="https://github.com/user-attachments/assets/126d7e9b-3e11-4486-86aa-912027d306e8" width="48px" height="48px"/>
+### <a id="Src" href="#Src" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Src.svg" width="32px" height="32px"/>Src</h6></a>
 
-# src
-
-The main folder contains the application's main files. <br/>
+<p >The main folder contains the application's main files.</p>
 
 > [!WARNING]  
 > There is no need to import from "vue", "vue-router", "pinia" and "vee-validate". All the methods and exported functionalities from these packages are auto-imported.
 
-
+---
  
-### assets 
-<img src="https://github.com/user-attachments/assets/4ddc495d-fb72-486f-b16d-befb26043637" width="32px" height="32px"/>
-
+### <a id="Assets" href="#Assets" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Assets.svg" width="32px" height="32px"/>Assets</h6></a>
+     
 Static assets (also called resources) like images, icons (SVG), fonts, and other media files are stored in the assets folder. If you have any static files, feel free to put them in here.
 
 <script setup>
@@ -19,22 +16,22 @@ Static assets (also called resources) like images, icons (SVG), fonts, and other
 
     const items = [
         {
-            "img": "https://github.com/user-attachments/assets/58c0c76b-6911-40d7-aa03-142527a09929",
+            "img": "../assets/icons/Fonts.svg",
             "title": "fonts/ Any font that is used throughout your application.",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/fc2799f0-fe47-414d-96ab-eab77384c2e1",
+            "img": "../assets/icons/Images.svg",
             "title": "images/ Any image file (exclude favicon icons) comes in here.",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/30e7b6dc-0aea-4609-b412-7b8691ffb2b3",
+            "img": "../assets/icons/Styles.svg",
             "title": "style/ Contains style related files. We use SCSS and a custom design system.",
             "link": null
         },
         {
-            "img": "https://github.com/user-attachments/assets/dc9259d8-da5f-4ab0-919f-9a166e2fc4e2",
+            "img": "../assets/icons/Svgs.svg",
             "title": "svg/ SVG files (mostly icons) used in project.",
             "link": null
         }
@@ -54,8 +51,9 @@ Static assets (also called resources) like images, icons (SVG), fonts, and other
 
 ---
 
-### bridges
-<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="32px" height="32px"/> 
+
+### <a id="Bridges" href="#Bridges" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Bridges.svg" width="32px" height="32px"/>Bridges</h6></a>
+
 Intended for files that act as intermediaries or connectors between different subdomains of the application(the anti-corruption layer).
 
 For example a shared logout or getting userInfo from auth or userManger domain. 
@@ -65,8 +63,8 @@ It is a good practice to have `.bridge` file extension at the end of file names.
 
 ---
 
-### clients
-<img src="https://github.com/user-attachments/assets/fb0ac7f8-e2c6-4b2e-b3b4-158c3e88ed59" width="32px" height="32px"/>
+### <a id="Clients" href="#Clients" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Clients.svg" width="32px" height="32px"/>Clients</h6></a>
+
 Intended for code that interfaces with external systems such as back-end APIs, WebAPIs like session and local storage, IndexDb, and ...
 
 On the other hand, a client is: 
@@ -82,8 +80,8 @@ On the other hand, a client is:
 
 --- 
 
-### components 
-<img src="https://github.com/user-attachments/assets/3c1171bf-ebc4-4c01-9112-cef698e7c093" width="32px" height="32px"/>
+### <a id="Components" href="#Components" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Components.svg" width="32px" height="32px"/>Components</h6></a>
+
 Intended for Vue components used throughout the project.  <br/>
 
 > [!TIP]  
@@ -92,8 +90,7 @@ Intended for Vue components used throughout the project.  <br/>
 
 ---
 
-### composables
-<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="32px" height="32px"/>
+### <a id="Composables" href="#Composables" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Composables.svg" width="32px" height="32px"/>Composables</h6></a>
 
 Intended for composables used throughout the project. According to Vue itself a "composable" is a function that leverages Vue's Composition API to encapsulate and reuse stateful logic. So whenever you have these 4 pillars you have a composable: 
 
@@ -111,8 +108,8 @@ If you don't have these 4 pillars, then you may not define a composable.
 
 ---
 
-### constants
-<img src="https://github.com/user-attachments/assets/e34fad94-e848-44f8-a0e2-bcb7560e7664" width="32px" height="32px"/>
+### <a id="Constants" href="#Constants" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Constants.svg" width="32px" height="32px"/>Constants</h6></a>
+
 
 Intended for storing constants or configurations used across the project. 
 
@@ -121,8 +118,8 @@ Use `object.freeze()`, follow CONSTANT_NAMING_CONVENTION and composition rule.
 
 ---
  
-### directives 
-<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="32px" height="32px"/>
+### <a id="Directives" href="#Directives" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Directives.svg" width="32px" height="32px"/>Directives</h6></a>
+
 Intended for custom Vue directives.<br/>
 
 > [!TIP]  
@@ -131,8 +128,8 @@ Intended for custom Vue directives.<br/>
 
 ---
 
-### entities
-<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="32px" height="32px"/>
+### <a id="Entities" href="#Entities" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Entities.svg" width="32px" height="32px"/>Entities</h6></a>
+
 
 Intended for defining data models or entities used in the application. for example, a class that is responsible for modeling a User.
 
@@ -147,8 +144,8 @@ It is a good practice to have `.entity` extension at the end of file names.
 
 ---
 
-### helpers
-<img src="https://github.com/user-attachments/assets/bc103c2f-45c6-44d5-be20-abb328fdf3fc" width="32px" height="32px"/>
+### <a id="Helpers" href="#Helpers" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Helpers.svg" width="32px" height="32px"/>Helpers</h6></a>
+
 Contains helpers that are used in the application. 
 
 The origin of helper comes from helper classes in Java. Classes that had internal state and sometimes bounded to the app logic. for example ArrayList, or a class that can only be used in your app and depends on the BL of your app. 
@@ -171,8 +168,8 @@ It is a good practice to have `.helper` extension at the end of the file name. H
 
 ---
 
-### interfaces
-<img src="https://github.com/user-attachments/assets/98a227ff-d3a8-4d7e-99db-5455c12bc7e9" width="32px" height="32px"/>
+### <a id="Interfaces" href="#Interfaces" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Interfaces.svg" width="32px" height="32px"/>Interfaces</h6></a>
+
 
 Intended for general interface definitions (interface or abstract class used to ensure a class has some methods).<br/>
 
@@ -183,8 +180,8 @@ Intended for general interface definitions (interface or abstract class used to 
 
 ---
 
-### layouts
-<img src="https://github.com/user-attachments/assets/4fa69775-3571-437b-9ae7-687e41c96b02" width="32px" height="32px"/>
+### <a id="Layouts" href="#Layouts" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Layouts.svg" width="32px" height="32px"/>Layouts</h6></a>
+
 Intended for defining the overall structure of layouts in the application. <br/>
 
 > [!TIP]  
@@ -192,8 +189,8 @@ Intended for defining the overall structure of layouts in the application. <br/>
 
 ---
 
-### libs
-<img src="https://github.com/user-attachments/assets/d5747e81-f119-4e5f-a7a7-89712b0e3da7" width="32px" height="32px"/>
+### <a id="Libs" href="#Libs" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Libs.svg" width="32px" height="32px"/>Libs</h6></a>
+
 
 Intended for including third-party libraries' decorators or custom libraries used in the project.
 
@@ -211,8 +208,8 @@ It is a good practice to have `.lib` extension at the end of the file name. It i
 
 ---
 
-### mappers
-<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="32px" height="32px"/>
+### <a id="Mappers" href="#Mappers" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Mappers.svg" width="32px" height="32px"/>Mappers</h6></a>
+
 Intended for mapping data from one format to another (Used in BL or UI layer).
 
 A mapper is a function, class, or object that is used to map or convert data. (usually returns an entity instance)
@@ -223,8 +220,8 @@ A mapper is a function, class, or object that is used to map or convert data. (u
 
 ---
 
-### plugins
-<img src="https://github.com/user-attachments/assets/859d0af7-f109-4758-a6d4-d2e644b26cb2" width="32px" height="32px"/>
+### <a id="Plugins" href="#Plugins" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Plugins.svg" width="32px" height="32px"/>Plugins</h6></a>
+
 
 Intended for Vue plugins or other plugins used by the app. According to Vue itself, plugins are self-contained code that usually add app-level functionality to Vue. So if you have an encapsulated code but want to expose it to the entire app, then you have a plugin. Consider plugins are Vue-related concepts, so in most cases, if you don't have reactivity and logic to add to Vue app functionality then you don't want to define a plugin. <br/>
 
@@ -272,8 +269,8 @@ Intended for Vue plugins or other plugins used by the app. According to Vue itse
 
 ---
 
-### repositories
-<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="32px" height="32px"/>
+### <a id="Repositories" href="#Repositories" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Repositories.svg" width="32px" height="32px"/>Repositories</h6></a>
+
 Intended for data access logic, such as interacting with APIs or databases (these implement the interface of the external system or in other words the details of communicating with the external systems).
 
 A repository is:
@@ -288,16 +285,16 @@ A repository is:
 
 ---
 
-### router
-<img src="https://github.com/user-attachments/assets/b1b9b6af-cb11-4d27-adef-b8d7aa657871" width="32px" height="32px"/>
+### <a id="Router" href="#Router" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Router.svg" width="32px" height="32px"/>Router</h6></a>
+
 Contains the routing logic for the application (including routes of each domain and middleware).
 
 The router instance is created with all routes configuration and global middlewares in `/router/index.js`. Middlewares should have `.middleware` file extension as well.
 
 --- 
 
-### schemas
-<img src="https://github.com/user-attachments/assets/29da70d3-9a77-4ffc-82ae-2bfa688e899c" width="32px" height="32px"/>
+### <a id="Schemas" href="#Schemas" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Schemas.svg" width="32px" height="32px"/>Schemas</h6></a>
+
 Intended for data validation schemas. Schema is a function, object, or class that is used for validation of data between layers. <br/>
 
 > [!TIP]  
@@ -306,8 +303,8 @@ Intended for data validation schemas. Schema is a function, object, or class tha
 
 ---
 
-### services
-<img src="https://github.com/user-attachments/assets/5d4fd89e-6b05-4f24-8009-1bc39b1c4923" width="32px" height="32px"/>
+### <a id="Services" href="#Services" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Services.svg" width="32px" height="32px"/>Services</h6></a>
+
 Intended for service classes or functions that encapsulate business logic.
 
 A service:
@@ -326,8 +323,8 @@ A service:
 
 ---
 
-### stores
-<img src="https://github.com/user-attachments/assets/61f8746f-479c-44fe-ae76-7f79689bc863" width="32px" height="32px"/>
+### <a id="Stores" href="#Stores" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Stores.svg" width="32px" height="32px"/>Stores</h6></a>
+
 Contains state management logic, likely using pinia or another state management library.
 
 Store Actions use services to communicate with other layers (BL). 
@@ -345,8 +342,8 @@ In this structure, the store is used to store both UI and BL states. If you want
 
 ---
 
-### utils
-<img src="https://github.com/user-attachments/assets/f3163c07-5aae-4444-8d84-1a056a10a818" width="32px" height="32px"/>
+### <a id="Utils" href="#Utils" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Utils.svg" width="32px" height="32px"/>Utils</h6></a>
+
 Contains utility functions that can be used across the project.
 
 The origin of utils comes from Java classes with all static methods used across the program to help the developer and obey SOLID principles. for example, the Math class or just an isString function.
@@ -364,9 +361,9 @@ It is a good practice to have `.util` extension at the end of the file name. It 
 
 ---
 
-### views
+### <a id="Views" href="#Views" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Views.svg" width="32px" height="32px"/>Views</h6></a>
 
-<img src="https://github.com/user-attachments/assets/f6efefe5-bcf5-444a-acb6-789ab0540a52" width="32px" height="32px"/>
+
 Contains the main view components, which are the pages of the application.
 
 It is a good practice to have `.view` extension at the end of the file names.

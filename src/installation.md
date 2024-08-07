@@ -1,5 +1,5 @@
 # Installation
 Currently, there are no installations available.
 
-## cli
+## CLI
 But We are working on CLI.
