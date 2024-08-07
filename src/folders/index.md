@@ -3,221 +3,263 @@
 <script setup>
     import Folders from "../components/Folders.vue";
 
+    import Gitlab from "../assets/icons/Gitlab.svg";
+    import Husky from "../assets/icons/Husky.svg";
+    import Vscode from "../assets/icons/Vscode.svg";
+    import Envs from "../assets/icons/Envs.svg";
+    import Nodejs from "../assets/icons/Nodejs.svg";
+    import Packages from "../assets/icons/Packages.svg";
+    import Public from "../assets/icons/Public.svg";
+    import Src from "../assets/icons/Src.svg";
+    import Assets from "../assets/icons/Assets.svg";
+    import Bridges from "../assets/icons/Bridges.svg";
+    import Clients from "../assets/icons/Clients.svg";
+    import Components from "../assets/icons/Components.svg";
+    import Composables from "../assets/icons/Composables.svg";
+    import Constants from "../assets/icons/Constants.svg";
+    import Directives from "../assets/icons/Directives.svg";
+    import Entities from "../assets/icons/Entities.svg";
+    import Helpers from "../assets/icons/Helpers.svg";
+    import Interfaces from "../assets/icons/Interfaces.svg";
+    import Layouts from "../assets/icons/Layouts.svg";
+    import Libs from "../assets/icons/Libs.svg";
+    import Mappers from "../assets/icons/Mappers.svg";
+    import Plugins from "../assets/icons/Plugins.svg";
+    import Repositories from "../assets/icons/Repositories.svg";
+    import Router from "../assets/icons/Router.svg";
+    import Schemas from "../assets/icons/Schemas.svg";
+    import Services from "../assets/icons/Services.svg";
+    import Stores from "../assets/icons/Stores.svg";
+    import Utils from "../assets/icons/Utils.svg";
+    import Views from "../assets/icons/Views.svg";
+    import App from "../assets/icons/App.svg";
+    import Main from "../assets/icons/Main.svg";
+    import Json from "../assets/icons/Json.svg";
+    import Git from "../assets/icons/Git.svg";
+    import Prettier from "../assets/icons/Prettier.svg";
+    import Commitlint from "../assets/icons/Commitlint.svg";
+    import Typescript from "../assets/icons/Typescript.svg";
+    import Eslint from "../assets/icons/Eslint.svg";
+    import Markdown from "../assets/icons/Markdown.svg";
+    import Vite from "../assets/icons/Vite.svg";
+    import Vitest from "../assets/icons/Vitest.svg";
+    import Yarn from "../assets/icons/Yarn.svg";
+
     const items = [
         {
-            "img": "../assets/icons/Gitlab.svg",
+            "img": Gitlab,
             "title": ".gitlab/",
             "link": null
         },
         {
-            "img": "../assets/icons/Husky.svg",
+            "img": Husky,
             "title": ".husky/",
             "link": "husky"
         },
         {
-            "img": "../assets/icons/Vscode.svg",
+            "img": Vscode,
             "title": ".vscode/",
             "link": null
         },
         {
-            "img": "../assets/icons/Envs.svg",
+            "img": Envs,
             "title": "env/",
             "link": "env"
         },
         {
-            "img": "../assets/icons/Nodejs.svg",
+            "img": Nodejs,
             "title": "node_modules/",
             "link": null
         },
         {
-            "img": "../assets/icons/Packages.svg",
+            "img": Packages,
             "title": "packages/",
             "link": "packages"
         },
         {
-            "img": "../assets/icons/Public.svg",
+            "img": Public,
             "title": "public/",
             "link": null
         },
         {
-            "img": "../assets/icons/Src.svg",
+            "img": Src,
             "title": "src/",
             "link": "src",
             folders: [
                 {
-                    "img": "../assets/icons/Assets.svg",
+                    "img": Assets,
                     "title": "assets",
                     "link": "#assets"
                 },
                 {
-                    "img": "../assets/icons/bridges.svg",
+                    "img": Bridges,
                     "title": "bridges",
                     "link": "#bridges"
                 },
                 {
-                    "img": "../assets/icons/clients.svg",
+                    "img": Clients,
                     "title": "clients",
                     "link": "#clients"
                 },
                 {
-                    "img": "../assets/icons/components.svg",
+                    "img": Components,
                     "title": "components",
                     "link": "#components"
                 },
                 {
-                    "img": "../assets/icons/composables.svg",
+                    "img": Composables,
                     "title": "composables",
                     "link": "#composables"
                 },
                 {
-                    "img": "../assets/icons/constants.svg",
+                    "img": Constants,
                     "title": "constants",
                     "link": "#constants"
                 },
                 {
-                    "img": "../assets/icons/directives.svg",
+                    "img": Directives,
                     "title": "directives",
                     "link": "#directives"
                 },
                 {
-                    "img": "../assets/icons/entities.svg",
+                    "img": Entities,
                     "title": "entities",
                     "link": "#entities"
                 },
                 {
-                    "img": "../assets/icons/helpers.svg",
+                    "img": Helpers,
                     "title": "helpers",
                     "link": "#helpers"
                 },
                 {
-                    "img": "../assets/icons/interfaces.svg",
+                    "img": Interfaces,
                     "title": "interfaces",
                     "link": "#interfaces"
                 },
                 {
-                    "img": "../assets/icons/layouts.svg",
+                    "img": Layouts,
                     "title": "layouts",
                     "link": "#layouts"
                 },
                 {
-                    "img": "../assets/icons/libs.svg",
+                    "img": Libs,
                     "title": "libs",
                     "link": "#libs"
                 },
                 {
-                    "img": "../assets/icons/mappers.svg",
+                    "img": Mappers,
                     "title": "mappers",
                     "link": "#mappers"
                 },
                 {
-                    "img": "../assets/icons/plugins.svg",
+                    "img": Plugins,
                     "title": "plugins",
                     "link": "#plugins"
                 },
                 {
-                    "img": "../assets/icons/repositories.svg",
+                    "img": Repositories,
                     "title": "repositories",
                     "link": "#repositories"
                 },
                 {
-                    "img": "../assets/icons/router.svg",
+                    "img": Router,
                     "title": "router",
                     "link": "#router"
                 },
                 {
-                    "img": "../assets/icons/schemas.svg",
+                    "img": Schemas,
                     "title": "schemas",
                     "link": "#schemas"
                 },
                 {
-                    "img": "../assets/icons/services.svg",
+                    "img": Services,
                     "title": "services",
                     "link": "#services"
                 },
                 {
-                    "img": "../assets/icons/stores.svg",
+                    "img": Stores,
                     "title": "stores",
                     "link": "#stores"
                 },
                 {
-                    "img": "../assets/icons/utils.svg",
+                    "img": Utils,
                     "title": "utils",
                     "link": "#utils"
                 },
                 {
-                    "img": "../assets/icons/views.svg",
+                    "img": Views,
                     "title": "views",
                     "link": "#views"
                 },
                 {
-                    "img": "../assets/icons/App.svg",
+                    "img": App,
                     "title": "App.vue",
                     "link": null
                 },
                 {
-                    "img" : "../assets/icons/main.svg",
+                    "img" : Main,
                     "title": "main.js",
                     "link": null
                 },
             ]
         },
         {
-            "img": "../assets/icons/Json.svg",
+            "img": Json,
             "title": ".eslintrc-auto-import.json",
             "link": null
         },
         {
-            "img": "../assets/icons/Git.svg",
+            "img": Git,
             "title": ".gitignore",
             "link": null
         },
         {
-            "img": "../assets/icons/Prettier.svg",
+            "img": Prettier,
             "title": ".prettierrc.json",
             "link": null
         },
         {
-            "img": "../assets/Icons/Commitlint.svg",
+            "img": Commitlint,
             "title": "commitlint.config.js",
             "link": "commitlint"
         },
         {
-            "img": "../assets/Icons/Typescript.svg",
+            "img": Typescript,
             "title": "components.d.ts",
             "link": null
         },
         {
-            "img": "../assets/icons/Eslint.svg",
+            "img": Eslint,
             "title": "eslint.config.mjs",
             "link": null
         },
         {
-            "img": "../assets/icons/Json.svg",
+            "img": Json,
             "title": "jsconfig.json",
             "link": null
         },
         {
-            "img": "../assets/icons/Nodejs.svg",
+            "img": Nodejs,
             "title": "package.json",
             "link": null
         },
         {
-            "img": "../assets/icons/Markdown.svg",
+            "img": Markdown,
             "title": "README.md",
             "link": null
         },
         {
-            "img": "../assets/icons/Vite.svg",
+            "img": Vite,
             "title": "vite.config.js",
             "link": null
         },
         {
-            "img": "../assets/icons/Vitest.svg",
+            "img": Vitest,
             "title": "vitest.config.js",
             "link": null
         },
         {
-            "img": "../assets/icons/Yarn.svg",
+            "img": Yarn,
             "title": "yarn.lock",
             "link": null
         }

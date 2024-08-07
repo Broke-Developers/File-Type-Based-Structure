@@ -4,20 +4,21 @@ Contains environmental variables used in the application.
 
 <script setup>
     import Folders from "../components/Folders.vue";
+    import Env from "../assets/icons/Env.svg";
 
     const items = [
         {
-            "img": "../assets/icons/Envs.svg",
+            "img": Env,
             "title": ".env.dev",
             "link": null
         },
         {
-            "img": "../assets/icons/Envs.svg",
+            "img": Env,
             "title": ".env.prod",
             "link": null
         },
         {
-            "img": "../assets/icons/Envs.svg",
+            "img": Env,
             "title": ".end.test",
             "link": null
         }

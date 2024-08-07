@@ -14,24 +14,29 @@ Static assets (also called resources) like images, icons (SVG), fonts, and other
 <script setup>
     import Folders from "../components/Folders.vue";
 
+    import Fonts from "../assets/icons/Fonts.svg";
+    import Images from "../assets/icons/Images.svg";
+    import Styles from "../assets/icons/Styles.svg";
+    import Svgs from "../assets/icons/Svgs.svg";
+
     const items = [
         {
-            "img": "../assets/icons/Fonts.svg",
+            "img": Fonts,
             "title": "fonts/ Any font that is used throughout your application.",
             "link": null
         },
         {
-            "img": "../assets/icons/Images.svg",
+            "img": Images,
             "title": "images/ Any image file (exclude favicon icons) comes in here.",
             "link": null
         },
         {
-            "img": "../assets/icons/Styles.svg",
+            "img": Styles,
             "title": "style/ Contains style related files. We use SCSS and a custom design system.",
             "link": null
         },
         {
-            "img": "../assets/icons/Svgs.svg",
+            "img": Svgs,
             "title": "svg/ SVG files (mostly icons) used in project.",
             "link": null
         }
