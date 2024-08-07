@@ -52,7 +52,7 @@ export default defineConfig({
   srcDir: "src",
   lang: "en-US",
 
-  base: "/",
+  base: "/file-type-based-structure",
 
   title: "File-type-Based-Structure",
   description:
