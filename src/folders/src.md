@@ -1,4 +1,4 @@
-### <a id="Src" href="#Src" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Src.svg" width="32px" height="32px"/>Src</h6></a>
+### <a id="Src" class="vt-doc" href="#Src" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Src.svg" width="32px" height="32px"/>Src</h6></a>
 
 <p >The main folder contains the application's main files.</p>
 
@@ -7,7 +7,7 @@
 
 ---
  
-### <a id="Assets" href="#Assets" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Assets.svg" width="32px" height="32px"/>Assets</h6></a>
+### <a id="Assets" class="vt-doc" href="#Assets" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Assets.svg" width="32px" height="32px"/>Assets</h6></a>
      
 Static assets (also called resources) like images, icons (SVG), fonts, and other media files are stored in the assets folder. If you have any static files, feel free to put them in here.
 
@@ -52,7 +52,7 @@ Static assets (also called resources) like images, icons (SVG), fonts, and other
 ---
 
 
-### <a id="Bridges" href="#Bridges" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Bridges.svg" width="32px" height="32px"/>Bridges</h6></a>
+### <a id="Bridges" class="vt-doc" href="#Bridges" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Bridges.svg" width="32px" height="32px"/>Bridges</h6></a>
 
 Intended for files that act as intermediaries or connectors between different subdomains of the application(the anti-corruption layer).
 
@@ -63,7 +63,7 @@ It is a good practice to have `.bridge` file extension at the end of file names.
 
 ---
 
-### <a id="Clients" href="#Clients" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Clients.svg" width="32px" height="32px"/>Clients</h6></a>
+### <a id="Clients" class="vt-doc" href="#Clients" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Clients.svg" width="32px" height="32px"/>Clients</h6></a>
 
 Intended for code that interfaces with external systems such as back-end APIs, WebAPIs like session and local storage, IndexDb, and ...
 
@@ -80,7 +80,7 @@ On the other hand, a client is:
 
 --- 
 
-### <a id="Components" href="#Components" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Components.svg" width="32px" height="32px"/>Components</h6></a>
+### <a id="Components" class="vt-doc" href="#Components" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Components.svg" width="32px" height="32px"/>Components</h6></a>
 
 Intended for Vue components used throughout the project.  <br/>
 
@@ -90,7 +90,7 @@ Intended for Vue components used throughout the project.  <br/>
 
 ---
 
-### <a id="Composables" href="#Composables" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Composables.svg" width="32px" height="32px"/>Composables</h6></a>
+### <a id="Composables" class="vt-doc" href="#Composables" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Composables.svg" width="32px" height="32px"/>Composables</h6></a>
 
 Intended for composables used throughout the project. According to Vue itself a "composable" is a function that leverages Vue's Composition API to encapsulate and reuse stateful logic. So whenever you have these 4 pillars you have a composable: 
 
@@ -108,7 +108,7 @@ If you don't have these 4 pillars, then you may not define a composable.
 
 ---
 
-### <a id="Constants" href="#Constants" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Constants.svg" width="32px" height="32px"/>Constants</h6></a>
+### <a id="Constants" class="vt-doc" href="#Constants" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Constants.svg" width="32px" height="32px"/>Constants</h6></a>
 
 
 Intended for storing constants or configurations used across the project. 
@@ -118,7 +118,7 @@ Use `object.freeze()`, follow CONSTANT_NAMING_CONVENTION and composition rule.
 
 ---
  
-### <a id="Directives" href="#Directives" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Directives.svg" width="32px" height="32px"/>Directives</h6></a>
+### <a id="Directives" class="vt-doc" href="#Directives" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Directives.svg" width="32px" height="32px"/>Directives</h6></a>
 
 Intended for custom Vue directives.<br/>
 
@@ -128,7 +128,7 @@ Intended for custom Vue directives.<br/>
 
 ---
 
-### <a id="Entities" href="#Entities" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Entities.svg" width="32px" height="32px"/>Entities</h6></a>
+### <a id="Entities" class="vt-doc" href="#Entities" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Entities.svg" width="32px" height="32px"/>Entities</h6></a>
 
 
 Intended for defining data models or entities used in the application. for example, a class that is responsible for modeling a User.
@@ -144,7 +144,7 @@ It is a good practice to have `.entity` extension at the end of file names.
 
 ---
 
-### <a id="Helpers" href="#Helpers" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Helpers.svg" width="32px" height="32px"/>Helpers</h6></a>
+### <a id="Helpers" class="vt-doc" href="#Helpers" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Helpers.svg" width="32px" height="32px"/>Helpers</h6></a>
 
 Contains helpers that are used in the application. 
 
@@ -168,7 +168,7 @@ It is a good practice to have `.helper` extension at the end of the file name. H
 
 ---
 
-### <a id="Interfaces" href="#Interfaces" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Interfaces.svg" width="32px" height="32px"/>Interfaces</h6></a>
+### <a id="Interfaces" class="vt-doc" href="#Interfaces" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Interfaces.svg" width="32px" height="32px"/>Interfaces</h6></a>
 
 
 Intended for general interface definitions (interface or abstract class used to ensure a class has some methods).<br/>
@@ -180,7 +180,7 @@ Intended for general interface definitions (interface or abstract class used to 
 
 ---
 
-### <a id="Layouts" href="#Layouts" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Layouts.svg" width="32px" height="32px"/>Layouts</h6></a>
+### <a id="Layouts" class="vt-doc" href="#Layouts" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Layouts.svg" width="32px" height="32px"/>Layouts</h6></a>
 
 Intended for defining the overall structure of layouts in the application. <br/>
 
@@ -189,7 +189,7 @@ Intended for defining the overall structure of layouts in the application. <br/>
 
 ---
 
-### <a id="Libs" href="#Libs" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Libs.svg" width="32px" height="32px"/>Libs</h6></a>
+### <a id="Libs" class="vt-doc" href="#Libs" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Libs.svg" width="32px" height="32px"/>Libs</h6></a>
 
 
 Intended for including third-party libraries' decorators or custom libraries used in the project.
@@ -208,7 +208,7 @@ It is a good practice to have `.lib` extension at the end of the file name. It i
 
 ---
 
-### <a id="Mappers" href="#Mappers" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Mappers.svg" width="32px" height="32px"/>Mappers</h6></a>
+### <a id="Mappers" class="vt-doc" href="#Mappers" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Mappers.svg" width="32px" height="32px"/>Mappers</h6></a>
 
 Intended for mapping data from one format to another (Used in BL or UI layer).
 
@@ -220,7 +220,7 @@ A mapper is a function, class, or object that is used to map or convert data. (u
 
 ---
 
-### <a id="Plugins" href="#Plugins" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Plugins.svg" width="32px" height="32px"/>Plugins</h6></a>
+### <a id="Plugins" class="vt-doc" href="#Plugins" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Plugins.svg" width="32px" height="32px"/>Plugins</h6></a>
 
 
 Intended for Vue plugins or other plugins used by the app. According to Vue itself, plugins are self-contained code that usually add app-level functionality to Vue. So if you have an encapsulated code but want to expose it to the entire app, then you have a plugin. Consider plugins are Vue-related concepts, so in most cases, if you don't have reactivity and logic to add to Vue app functionality then you don't want to define a plugin. <br/>
@@ -269,7 +269,7 @@ Intended for Vue plugins or other plugins used by the app. According to Vue itse
 
 ---
 
-### <a id="Repositories" href="#Repositories" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Repositories.svg" width="32px" height="32px"/>Repositories</h6></a>
+### <a id="Repositories" class="vt-doc" href="#Repositories" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Repositories.svg" width="32px" height="32px"/>Repositories</h6></a>
 
 Intended for data access logic, such as interacting with APIs or databases (these implement the interface of the external system or in other words the details of communicating with the external systems).
 
@@ -285,7 +285,7 @@ A repository is:
 
 ---
 
-### <a id="Router" href="#Router" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Router.svg" width="32px" height="32px"/>Router</h6></a>
+### <a id="Router" class="vt-doc" href="#Router" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Router.svg" width="32px" height="32px"/>Router</h6></a>
 
 Contains the routing logic for the application (including routes of each domain and middleware).
 
@@ -293,7 +293,7 @@ The router instance is created with all routes configuration and global middlewa
 
 --- 
 
-### <a id="Schemas" href="#Schemas" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Schemas.svg" width="32px" height="32px"/>Schemas</h6></a>
+### <a id="Schemas" class="vt-doc" href="#Schemas" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Schemas.svg" width="32px" height="32px"/>Schemas</h6></a>
 
 Intended for data validation schemas. Schema is a function, object, or class that is used for validation of data between layers. <br/>
 
@@ -303,7 +303,7 @@ Intended for data validation schemas. Schema is a function, object, or class tha
 
 ---
 
-### <a id="Services" href="#Services" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Services.svg" width="32px" height="32px"/>Services</h6></a>
+### <a id="Services" class="vt-doc" href="#Services" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Services.svg" width="32px" height="32px"/>Services</h6></a>
 
 Intended for service classes or functions that encapsulate business logic.
 
@@ -323,7 +323,7 @@ A service:
 
 ---
 
-### <a id="Stores" href="#Stores" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Stores.svg" width="32px" height="32px"/>Stores</h6></a>
+### <a id="Stores" class="vt-doc" href="#Stores" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Stores.svg" width="32px" height="32px"/>Stores</h6></a>
 
 Contains state management logic, likely using pinia or another state management library.
 
@@ -342,7 +342,7 @@ In this structure, the store is used to store both UI and BL states. If you want
 
 ---
 
-### <a id="Utils" href="#Utils" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Utils.svg" width="32px" height="32px"/>Utils</h6></a>
+### <a id="Utils" class="vt-doc" href="#Utils" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Utils.svg" width="32px" height="32px"/>Utils</h6></a>
 
 Contains utility functions that can be used across the project.
 
@@ -361,7 +361,7 @@ It is a good practice to have `.util` extension at the end of the file name. It 
 
 ---
 
-### <a id="Views" href="#Views" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1rem"><img src="./../assets/icons/Views.svg" width="32px" height="32px"/>Views</h6></a>
+### <a id="Views" class="vt-doc" href="#Views" style="text-decoration:none;"><h6 style="display:flex; gap:10px; align-items:center;font-size:1rem"><img src="./../assets/icons/Views.svg" width="32px" height="32px"/>Views</h6></a>
 
 
 Contains the main view components, which are the pages of the application.
