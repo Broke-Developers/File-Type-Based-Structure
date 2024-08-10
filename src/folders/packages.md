@@ -1,5 +1,5 @@
 
-# <a id="Packages" href="#Packages" style="text-decoration:none;"><h1 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1.6rem"><img src="./../assets/icons/Packages.svg" width="32px" height="32px"/>Packages</h1></a>
+# <a id="Packages" class="vt-doc" href="#Packages" style="text-decoration:none;"><h1 style="display:flex; gap:10px; align-items:center;font-size:1.6rem"><img src="./../assets/icons/Packages.svg" width="32px" height="32px"/>Packages</h1></a>
 
 Contains potentially npm packages.
 

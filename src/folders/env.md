@@ -1,4 +1,4 @@
-# <a id="Env" href="#Env" style="text-decoration:none;"><h1 style="display:flex; gap:10px; align-items:center;color:var(--vt-c-text-light-2);font-size:1.6rem"><img src="../assets/icons/Envs.svg" width="32px" height="32px"/>Env</h1></a>
+# <a id="Env" class="vt-doc" href="#Env" style="text-decoration:none;"><h1 style="display:flex; gap:10px; align-items:center;font-size:1.6rem"><img src="../assets/icons/Envs.svg" width="32px" height="32px"/>Env</h1></a>
 
 Contains environmental variables used in the application.
 
